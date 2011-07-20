@@ -10,8 +10,11 @@ begin
     gem.email = "kazu.dev@gmail.com"
     gem.homepage = "http://github.com/ktlacaelel/chubasaweber"
     gem.authors = ["kazuyoshi tlacaelel"]
+    gem.add_dependency "oauth"
+    gem.add_development_dependency "fakeweb"
+    gem.add_development_dependency "rspec", "~> 2.1.0"
+    gem.add_development_dependency "yard",  "~> 0.6.0"
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
